@@ -93,7 +93,7 @@ body{
     color: #f54a7f;
 }
 .item-card .card-title{
-    font-size:14px;
+    font-size:16px;
     margin-bottom:.5rem;
 }
 .item-card .card-text{
@@ -113,5 +113,55 @@ body{
 }
 .item-card .price-text{
     font-size:16px;
+    color: #f54a7f;
+}
+
+/* USER PAGE */
+.user-card .card-text{
+    font-size:12px;
+}
+.user-card .card-img-top{
+    border-radius:10em;
+}
+.user-card .col-10{
+    padding:0;
+}
+.user-card .card-body{
+    background: #f54a7f;
+}
+.user-name{
+    font-weight: 700;
+    color:white;
+    font-size:18px;
+    margin-bottom:0;
+}
+.user-card .follow-count{
+    color:white !important;
+    font-size: 10px;
+    opacity:.9;
+}
+.user-card .fa-star{
+    color:white;
+}
+.user-menu-card{
+    width:100%;
+}
+.user-menu-card .card-title{
+    font-size:14px;
+}
+.user-menu-card .nav-item{
+    font-size:20px;
+    color: #f54a7f;
+    padding: 10px 10px;
+    width:25%;
+    border-radius:10em;
+}
+.user-menu-card{
+    font-size:14px;
+}
+.user-menu-card small{
+    font-size:60%;
+}
+.user-menu-card .nav-item:hover{
     color: #f54a7f;
 }

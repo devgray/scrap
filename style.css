@@ -31,7 +31,7 @@ body{
   .ripple:active {
     background-color: #ff498077;
     background-size: 100%;
-    transition: background 1s;
+    transition: background .8s;
   }
 .badge-primary{
     background: #ff4980;

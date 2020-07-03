@@ -163,6 +163,9 @@ background-color: #ff49804f!important;
 .card{
     border:none;
 }
+.card-body{
+    padding: .8rem 1rem;
+}
 .item-card .price-text{
     font-size:16px;
     color: #ff4980;

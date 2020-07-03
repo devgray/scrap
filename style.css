@@ -29,10 +29,13 @@ body{
     background: #f8f9fa radial-gradient(circle, transparent 20%,#f8f9fa 0%) center/15000%;
   }
   .ripple:active {
-    background-color: #ff498077;
+    background-color: #ff49804f;
     background-size: 100%;
     transition: background .8s;
   }
+a.bg-light:focus, a.bg-light:hover, button.bg-light:focus, button.bg-light:hover {
+background-color: #ff49804f!important;
+}
 .navbar{
     padding-top:40px;
 }
@@ -228,7 +231,7 @@ body{
     transition: background-color .5s step-end;
 }
 .user-card-item .nav-item:active{
-    background: #dae0e5;
+    background: #ff49804f;
     transition: .3s ease-in-out;
 }
 .user-menu-card .nav-item{

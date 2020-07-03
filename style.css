@@ -1,14 +1,14 @@
 
-@keyframes colorFadeIn {
+@keyframes scaleUp {
     0% {
-      background: transparent;
+        transform: scale(1);
     }
     40% {
-      background:#ff4980;
+        transform:scale(1.2);
     }
     100% {
-        background: transparent;
-      }
+        transform:scale(1);
+    }
   }
 
 *{
@@ -87,7 +87,7 @@ body{
     border-radius:2em;
 }
 .nav-bottom .nav-link:active{
-    animation: colorFadeIn 1s;
+    animation: scaleUp 1s;
 }
 
 .cls-1 {

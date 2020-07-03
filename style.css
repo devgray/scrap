@@ -172,6 +172,7 @@ body{
 }
 
 /* USER PAGE */
+
 .user-page .card{
     border-radius:0;
 }
@@ -186,6 +187,7 @@ body{
 }
 .user-card .card-body{
     background: #ff4980;
+    padding: .8rem .5rem;
 }
 .user-name{
     font-weight: 700;

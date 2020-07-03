@@ -20,6 +20,19 @@
 body{
     background: #f5f2f3;
 }
+/* Ripple effect */
+.ripple {
+    background-position: center;
+    transition: background 1s;
+  }
+  .ripple:hover {
+    background: white radial-gradient(circle, transparent 1%,white 1%) center/15000%;
+  }
+  .ripple:active {
+    background-color: #ff498077;
+    background-size: 100%;
+    transition: background 0s;
+  }
 .navbar{
     padding-top:40px;
 }
@@ -47,8 +60,21 @@ body{
     padding: 0;
 }
 .nav-bottom .nav-item{
-    padding:10px 10px;
+    padding:15px 10px ;
     width:100%;
+    border-radius:3em;
+}
+.home-icon{
+    padding: 17px 10px 14px 10px !important;
+}
+.feed-icon{
+    padding:13px 10px 14px 10px !important;
+}
+.play-icon{
+    padding: 16px 10px !important;
+}
+.cart-icon{
+    padding:16px 10px 14px 10px !important;
 }
 .nav-top .nav-link,.nav-top .nav-link:hover{
     color:white;
@@ -84,11 +110,11 @@ body{
 }
 .nav-bottom .nav-link{
     opacity: 1;
-    border-radius:2em;
+    
 }
-.nav-bottom .nav-link:active{
+/* .nav-bottom .nav-link:active{
     animation: scaleUp 3s;
-}
+} */
 
 .cls-1 {
     fill: #7a7a7a;

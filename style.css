@@ -87,7 +87,7 @@ body{
     border-radius:2em;
 }
 .nav-bottom .nav-link:active{
-    animation: scaleUp 1s;
+    animation: scaleUp 3s;
 }
 
 .cls-1 {

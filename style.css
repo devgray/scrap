@@ -34,7 +34,7 @@ body{
     transition: background .8s;
   }
 a.bg-light:focus, a.bg-light:hover, button.bg-light:focus, button.bg-light:hover {
-background-color: #ff49804f!important;
+background-color: #ff498023!important;
 }
 .navbar{
     padding-top:40px;
@@ -65,7 +65,10 @@ background-color: #ff49804f!important;
 .nav-bottom .nav-item{
     padding:15px 10px ;
     width:100%;
-    border-radius:3em;
+    border-radius:2em;
+}
+.nav-bottom .nav-item:hover{
+    background: #ff49804f;
 }
 .home-icon{
     padding: 17px 10px 14px 10px !important;

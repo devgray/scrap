@@ -163,6 +163,9 @@ body{
 .user-card .fa-star{
     color:white;
 }
+.user-card-item{
+    border-bottom:1px solid rgb(240, 240, 240);
+}
 .user-card-item, .user-menu-card{
     width:100%;
 }
@@ -195,7 +198,7 @@ body{
     margin-bottom:0;
 }
 .user-page .card-body{
-    padding:15px 15px;
+    
 }
 .user-card-item .far, .user-card-item .fas{
     color:#ff4980;

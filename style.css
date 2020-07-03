@@ -1,11 +1,14 @@
 
-@keyframes zoomOut {
+@keyframes colorFadeIn {
     0% {
-      transform: scale(0);
+      background: transparent;
+    }
+    40% {
+      background:#ff4980;
     }
     100% {
-      transform: scale(-100%);
-    }
+        background: transparent;
+      }
   }
 
 *{
@@ -81,7 +84,12 @@ body{
 }
 .nav-bottom .nav-link{
     opacity: 1;
+    border-radius:2em;
 }
+.nav-bottom .nav-link:active{
+    animation: colorFadeIn 1s;
+}
+
 .cls-1 {
     fill: #7a7a7a;
     fill-rule: evenodd;

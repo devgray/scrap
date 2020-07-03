@@ -66,6 +66,7 @@ body{
 }
 .nav-bottom{
     box-shadow: 10px 10px 10px;
+    padding: 0px 0px;
 }
 .nav-bottom .nav-link{
     opacity: 1;
@@ -75,14 +76,14 @@ body{
     fill-rule: evenodd;
 }
 .cls-1.active{
-    fill: #f54a7f;
+    fill: #ff4980;
 }
 .nav-bottom .svg-icon{
     height:35px;
     padding: 5px 2px;
 }
 .bg-pink{
-    background-color:#f54a7f;
+    background-color:#ff4980;
 }
 .item-card .card-body{
     padding:0px;
@@ -93,7 +94,7 @@ body{
 }
 .card-text .fa-star{
     font-size:9px;
-    color: #f54a7f;
+    color: #ff4980;
 }
 .item-card .card-title{
     font-size:16px;
@@ -116,11 +117,26 @@ body{
 }
 .item-card .price-text{
     font-size:16px;
-    color: #f54a7f;
+    color: #ff4980;
+}
+.app-link{
+    color: #2b2b2b;
+}
+.user-card-item .app-link{
+    font-size:12px !important;
 }
 
 /* USER PAGE */
-
+.user-page .card{
+    border-radius:0;
+}
+.user-page .user-card-item:not(:active){
+    transition: background-color .1s step-end;
+}
+.user-page .user-card-item:active{
+    background: #dae0e5;
+    transition: .2s ease-in-out;
+}
 .user-card .card-text{
     font-size:12px;
 }
@@ -131,7 +147,7 @@ body{
     padding:0;
 }
 .user-card .card-body{
-    background: #f54a7f;
+    background: #ff4980;
 }
 .user-name{
     font-weight: 700;
@@ -147,29 +163,44 @@ body{
 .user-card .fa-star{
     color:white;
 }
-.user-menu-card{
+.user-card-item, .user-menu-card{
     width:100%;
 }
-.user-menu-card .card-title{
+.user-card-item .card-title{
     font-size:14px;
 }
-.user-menu-card .nav-item{
+.user-card-item .nav-item{
     font-size:20px;
-    color: #f54a7f;
-    padding: 10px 10px;
+    color: #ff4980;
     width:25%;
     border-radius:10em;
 }
-.user-menu-card{
+.user-purchases-card{
     font-size:14px;
 }
-.user-menu-card small{
+.user-card-item small{
     font-size:60%;
 }
-.user-menu-card .nav-item:not(:active){
+.user-card-item .nav-item:not(:active){
     transition: background-color .5s step-end;
 }
-.user-menu-card .nav-item:active{
-    background: #c0c0c0;
+.user-card-item .nav-item:active{
+    background: #dae0e5;
     transition: .3s ease-in-out;
+}
+.user-menu-card .nav-item{
+    font-size:14px;
+}
+.user-page .card-title{
+    margin-bottom:0;
+}
+.user-page .card-body{
+    padding:15px 15px;
+}
+.user-card-item .far, .user-card-item .fas{
+    color:#ff4980;
+    font-size:18px;
+}
+.user-card-item .fa-chevron-right{
+    font-size:12px;
 }

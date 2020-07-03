@@ -17,6 +17,9 @@
 body{
     background: #f5f2f3;
 }
+.navbar{
+    padding-top:50px;
+}
 .badge-primary{
     background: #ff4980;
     font-size:10px;

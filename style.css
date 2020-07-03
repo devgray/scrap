@@ -190,7 +190,7 @@ background-color: #ff49804f!important;
 }
 .user-card .card-body{
     background: #ff4980;
-    padding: .8rem .5rem;
+    padding: .4rem .5rem .8rem .5rem;
 }
 .user-name{
     font-weight: 700;
@@ -246,6 +246,9 @@ background-color: #ff49804f!important;
 }
 .user-card-item .fa-chevron-right{
     font-size:12px;
+}
+.user-card-item .sub-card{
+    padding:15px 5px;
 }
 
 /* POINTS PAGE */

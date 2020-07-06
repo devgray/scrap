@@ -145,6 +145,9 @@ background-color: #ff498023!important;
 .bg-grey{
     background-color:#f0f0f0;
 }
+.fill-black{
+    color:#212529 !important;
+}
 .item-card .card-body{
     padding:0px;
 }
@@ -370,7 +373,7 @@ background-color: #ff498023!important;
     border-radius:0;
 }
 .feed-page .post-avi{
-    height:40px;
+    height:35px;
     border-radius:10em;
 }
 .feed-page .new-post .card-header{
@@ -403,7 +406,7 @@ background-color: #ff498023!important;
     color:white;
 }
 .feed-page .modal-dialog{
-    width:70%;
+    width:60%;
 }
 .modal-content{
     border:none;
@@ -424,16 +427,19 @@ background-color: #ff498023!important;
 }
 .modal-backdrop
 {
-    opacity:.6 !important;
+    opacity:.7 !important;
 }
 .modal-content .nav-item{
     width:100%;
 }
-.post-settings .nav-link{
+.post-option-btn{
+    font-size:16px !important;
+}
+.post-options .nav-link{
     text-align: left;
     border:none;
     padding:5px;
 }
-.post-settings .nav-link.active{
+.post-options .nav-link.active{
     border:none;
 }

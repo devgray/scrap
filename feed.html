@@ -36,14 +36,15 @@
 <body>  
         <!-- TOP NAVBAR -->
         <!-- <div w3-include-html="../common/nav-top.html"></div> -->
-        <nav class="navbar navbar-light sticky-top bg-grey d-flex nav-top">
+        <nav class="navbar navbar-light sticky-top bg-light d-flex nav-top">
         <form class="form-inline">
         <div class="input-group ">
-        <div class="input-group-prepend">
+            <h5>deanleecooper</h5>
+        <!-- <div class="input-group-prepend">
                 <span class="input-group-text" id="basic-addon1"><img class="svg-icon" src="svg/search-icon.svg"></span>
         </div>
-        <input type="text" class="form-control search-bar" placeholder="Looking for ..." aria-label="Search" aria-describedby="basic-addon1">
-        <a class="nav-item nav-link align-self-center pl-3" href=""><i class="far fa-bell fa-2x fill-pink"></i></a>
+        <input type="text" class="form-control search-bar" placeholder="Looking for ..." aria-label="Search" aria-describedby="basic-addon1"> -->
+        <a class="nav-item nav-link align-self-center pl-3 ml-auto" href=""><i class="far fa-bell fa-2x fill-pink"></i></a>
         <a class="nav-item nav-link align-self-center pl-3" href=""><i class="far fa-comment fa-2x fill-pink"></i></a>
         </div>
         </form>
@@ -57,7 +58,7 @@
                     <!-- EMPTY SECTION -->     
                 </div>
 
-                <div class="col-12">
+                <div class="col-12 bg-light">
                     <ul class="nav nav-tabs d-flex justify-content-around mb-1 " id="myTab" role="tablist">
                         <li class="nav-item">
                             <a class="nav-link active d-flex flex-column" id="section-1-tab" data-toggle="tab" href="#section-1" role="tab" aria-controls="section-1" aria-selected="true">
@@ -77,9 +78,45 @@
                     </ul>
                         
                         <div class="tab-content" id="myTabContent">
-
                         <div class="tab-pane fade show active" id="section-1" role="tabpanel" aria-labelledby="section-1-tab">
+
+                            <div class="new-post">
+                            <div class="card">
+                                <div class="d-flex">
+                                    <a href="#" class="col-10 card-header d-flex"><img class="post-avi" src="images/jennie.jpg">
+                                        <div class="ml-2 align-self-center post-text-header">
+                                        <h6>JAKS</h6>
+                                        <small class="text-muted">1 hr ago</small></div>
+                                    </a>
+                                    <div class="col-2 d-flex bg-light">
+                                    <a class="align-self-center fas fa-ellipsis-h ml-auto" href="#" data-toggle="modal" data-target=".bd-example-modal-sm">
+                                    </a>
+                                    </div>
+                                <div class="modal fade bd-example-modal-sm" tabindex="-1" role="dialog" aria-labelledby="mySmallModalLabel" aria-hidden="true">
+                                <div class="modal-dialog modal-sm m-auto modal-dialog-centered">
+                                    <div class="modal-content">
+                                    HEHEHE
+                                    </div>
+                                </div>
+                                </div>
+
+                                </div>
+                                <img class="card-img-bottom" src="images/dvobar.jpg" alt="Card image cap">
                                 
+                                <div class="card-body post-content">
+                                    <h6 class="card-title">HOW YOU LIKE THAT</h6>
+                                    <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+                                </div>
+                                <div class="card-body post-reacts">
+                                <div class="card-text d-flex"><a href="#" class="fas fa-heart"></a>
+                                    <a href="#" class="far fa-comment ml-3"></a>
+                                    <a href="#" class="far fa-bookmark ml-auto"></a></div>
+                                </div>
+                            </div>
+                            
+                            </div>
+
+                            
 
                         </div>
                         <div class="tab-pane fade" id="section-2" role="tabpanel" aria-labelledby="section-2-tab">

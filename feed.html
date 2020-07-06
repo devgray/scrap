@@ -59,7 +59,7 @@
                 </div>
 
                 <div class="col-12 bg-light">
-                    <ul class="nav nav-tabs d-flex justify-content-around mb-1 " id="myTab" role="tablist">
+                    <ul class="nav nav-tabs d-flex justify-content-around " id="myTab" role="tablist">
                         <li class="nav-item">
                             <a class="nav-link active d-flex flex-column" id="section-1-tab" data-toggle="tab" href="#section-1" role="tab" aria-controls="section-1" aria-selected="true">
                                
@@ -83,33 +83,13 @@
                             <div class="new-post">
                             <div class="card">
                                 <div class="d-flex">
-                                    <a href="#" class="col-10 card-header d-flex"><img class="post-avi" src="images/jennie.jpg">
+                                    <a href="#" class="col-10 card-header bg-white d-flex"><img class="post-avi" src="images/jennie.jpg">
                                         <div class="ml-2 align-self-center post-text-header">
                                         <h6>JAKS</h6>
-                                        <small class="text-muted">1 hr ago</small></div>
-                                    </a>
-                                    <div class="col-2 d-flex bg-light">
-                                    <a class="align-self-center fas fa-ellipsis-v ml-auto fill-black post-option-btn" href="#" data-toggle="modal" data-target=".bd-example-modal-sm">
-                                    </a>
-                                    </div>
-                                <div class="modal fade bd-example-modal-sm" tabindex="-1" role="dialog" aria-labelledby="mySmallModalLabel" aria-hidden="true">
-                                <div class="modal-dialog modal-sm m-auto modal-dialog-centered">
-                                    <div class="modal-content post-options">
-                                            <ul class="nav flex-column">
-                                            <li class="nav-item">
-                                                <a class="nav-link" href="#">Edit</a>
-                                            </li>
-                                            <li class="nav-item">
-                                                <a class="nav-link" href="#">Delete</a>
-                                            </li>
-                                            <li class="nav-item">
-                                                <a class="nav-link" href="#">Report</a>
-                                            </li>
-                                            </ul>
-                                    </div>
-                                </div>
-                                </div>
-
+                                        <small class="text-muted">1 hr ago</small></div></a>
+                                    <a class="col-2 d-flex bg-white" href="#" data-toggle="modal" data-target=".bd-example-modal-sm">
+                                    <i class="align-self-center fas fa-ellipsis-v ml-auto fill-black post-option-btn">
+                                    </i></a>
                                 </div>
                                 <img class="card-img-bottom" src="images/dvobar.jpg" alt="Card image cap">
                                 
@@ -118,9 +98,34 @@
                                     <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
                                 </div>
                                 <div class="card-body post-reacts">
-                                <div class="card-text d-flex"><a href="#" class="fas fa-heart"></a>
-                                    <a href="#" class="far fa-comment ml-3"></a>
-                                    <a href="#" class="far fa-bookmark ml-auto"></a></div>
+                                    <p class="mb-2 text-muted align-self-center">1M likes &nbsp; 3.4k comments</p>
+                                    <div class="card-text d-flex"><a href="" class="fas fa-heart"></a>
+                                    <a href="" class="far fa-comment ml-3"></a>
+                                    <a href="" class="far fa-bookmark ml-auto"></a></div>
+                                </div>
+                            </div>
+
+                            <div class="card">
+                                <div class="d-flex">
+                                    <a href="#" class="col-10 card-header bg-white d-flex"><img class="post-avi" src="images/lisa.jpg">
+                                        <div class="ml-2 align-self-center post-text-header">
+                                        <h6>eBay</h6>
+                                        <small class="text-muted">1 hr ago</small></div></a>
+                                    <a class="col-2 d-flex bg-white" href="#" data-toggle="modal" data-target=".bd-example-modal-sm">
+                                    <i class="align-self-center fas fa-ellipsis-v ml-auto fill-black post-option-btn">
+                                    </i></a>
+                                </div>
+                                <img class="card-img-bottom" src="images/jenlisa.jpg" alt="Card image cap">
+                                
+                                <div class="card-body post-content">
+                                    <h6 class="card-title">Jenlisa</h6>
+                                    <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+                                </div>
+                                <div class="card-body post-reacts">
+                                    <p class="mb-2 text-muted align-self-center">1M likes &nbsp; 3.4k comments</p>
+                                    <div class="card-text d-flex"><a href="" class="fas fa-heart"></a>
+                                    <a href="" class="far fa-comment ml-3"></a>
+                                    <a href="" class="far fa-bookmark ml-auto"></a></div>
                                 </div>
                             </div>
                             
@@ -205,6 +210,29 @@
         </nav>
         
         <!-- END BOTTOM NAVBAR -->
+
+        <!-- START MODALS -->
+        <div class="feed-page">
+        <div class="modal fade bd-example-modal-sm" tabindex="-1" role="dialog" aria-labelledby="mySmallModalLabel" aria-hidden="true">
+                <div class="modal-dialog modal-sm m-auto modal-dialog-centered">
+                    <div class="modal-content post-options">
+                            <ul class="nav flex-column">
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Edit</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Delete</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Report</a>
+                            </li>
+                            </ul>
+                    </div>
+                </div>
+                </div>
+        </div>
+
+        <!-- END MODALS -->
 </body>
 
 <script>

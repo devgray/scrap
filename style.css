@@ -358,10 +358,12 @@ background-color: #ff498023!important;
     background:#f5f2f3;
 }
 .feed-page .tab-content .card-body{
-    padding:13px 15px;
+    padding:13px 5px;
+    background:white;
 }
 .feed-page .tab-content .card{ 
     width:100%;
+    padding:0 10px;
     border-radius: 0;
     border-bottom:1px solid rgb(240, 240, 240);
 }
@@ -377,7 +379,7 @@ background-color: #ff498023!important;
     border-radius:10em;
 }
 .feed-page .new-post .card-header{
-    padding:10px 15px;
+    padding:10px 5px;
     border-bottom:none;
 }
 .new-post .text-muted{
@@ -442,4 +444,8 @@ background-color: #ff498023!important;
 }
 .post-options .nav-link.active{
     border:none;
+}
+.new-post a.bg-light:focus,
+.new-post a.bg-light:hover{
+    background:#f8f9fa!important
 }

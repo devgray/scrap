@@ -453,10 +453,12 @@ background-color: #ff498023!important;
 }
 .new-post-textbox{
     border-radius: 10em !important;
-    font-size:14px;
+    font-size:14px !important;
 }
 .new-post-textbox p{
     margin:0;
+    color:black !important;
+    font-weight: 400;
 }
 .add-new-post{
     padding:10px 15px;
@@ -498,14 +500,15 @@ background-color: #ff498023!important;
 .new-post-modal-wrap .card-title{
     margin:0;
 }
+
 .new-post-textarea{
     border-radius: .2em !important;
-    min-height:20vh;
-    max-height: 20vh;
+    min-height:30vh;
+    max-height: 30vh;
     font-size:14px;
 }
 .new-post-textarea {
-    padding:5px 20px !important;
+    padding:5px 15px !important;
     border:none;
     font-weight: 300;
     font-size:24px;
@@ -520,4 +523,10 @@ background-color: #ff498023!important;
 }
 .activity-title{
     padding:10px;
+}
+.modal-body .post-avi{
+    height:40px;
+}
+.modal-body .avi-container{
+    padding:15px 15px 2px 15px;
 }

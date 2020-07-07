@@ -501,7 +501,8 @@ background-color: #ff498023!important;
 .new-post-textarea {
     padding:5px 10px !important;
     border:none;
-    font-size:22px;
+    font-weight: 300;
+    font-size:24px;
 }
 .close-post-modal{
     width:20% !important;

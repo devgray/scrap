@@ -449,3 +449,9 @@ background-color: #ff498023!important;
 .new-post a.bg-light:hover{
     background:#f8f9fa!important
 }
+.img-crop img{
+    object-position: center; /* Center the image within the element */
+    width: auto;
+    height:250px;
+    margin-bottom: 1rem;
+}

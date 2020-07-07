@@ -440,7 +440,7 @@ background-color: #ff498023!important;
 .post-options .nav-link{
     text-align: left;
     border:none;
-    padding:5px;
+    padding:10px;
 }
 .post-options .nav-link.active{
     border:none;

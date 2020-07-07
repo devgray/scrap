@@ -464,13 +464,21 @@ background-color: #ff498023!important;
 .new-post-modal-wrap .modal-dialog{
     width:100%;
 }
+.new-post-modal-wrap .add-new-post{
+    margin-top:30px;
+    padding:10px 5px;
+}
+.new-post-modal-wrap .add-new-post
+.new-post-textbox{
+    margin-left:2em;
+}
 .modal-content{
     border:none;
     padding:10px;
     border-radius: 0;
 }
 .new-post-modal-wrap .modal-content{
-    padding: 10px 10px 0 10px;
+    padding: 0;
     height: 100vh;
     overflow:auto; 
 }
@@ -479,5 +487,27 @@ background-color: #ff498023!important;
     opacity: 1 !important;
 }
 .modal-header, .modal-body, .modal-footer{
+    padding:10px;
+}
+.new-post-modal-wrap .modal-header{
+    padding:10px 10px 5px 10px;
+}
+.new-post-textarea{
+    border-radius: .2em !important;
+    min-height:20vh;
+    max-height: 20vh;
+    font-size:14px;
+}
+.new-post-textarea {
+    padding:5px 10px !important;
+    border:none;
+    font-size:22px;
+}
+.close-post-modal{
+    width:20% !important;
+    padding:10px;
+}
+.submit-new-post{
+    font-size:16px;
     padding:10px;
 }

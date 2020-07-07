@@ -358,7 +358,7 @@ background-color: #ff498023!important;
     background:#f5f2f3;
 }
 .feed-page .tab-content .card-body{
-    padding:13px 5px;
+    padding:10px 5px;
     background:white;
 }
 .feed-page .tab-content .card{ 
@@ -492,6 +492,12 @@ background-color: #ff498023!important;
 .new-post-modal-wrap .modal-header{
     padding:13px 10px 2px 10px;
 }
+.new-post-modal-wrap .modal-body{
+    padding:0;
+}
+.new-post-modal-wrap .card-title{
+    margin:0;
+}
 .new-post-textarea{
     border-radius: .2em !important;
     min-height:20vh;
@@ -499,16 +505,19 @@ background-color: #ff498023!important;
     font-size:14px;
 }
 .new-post-textarea {
-    padding:5px 10px !important;
+    padding:5px 20px !important;
     border:none;
     font-weight: 300;
     font-size:24px;
 }
 .close-post-modal{
-    width:20% !important;
+    width:10% !important;
     padding:10px;
 }
 .submit-new-post{
     font-size:16px;
+    padding:10px;
+}
+.activity-title{
     padding:10px;
 }

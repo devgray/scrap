@@ -455,6 +455,9 @@ background-color: #ff498023!important;
     border-radius: 10em !important;
     font-size:14px;
 }
+.new-post-textbox p{
+    margin:0;
+}
 .add-new-post{
     padding:10px 15px;
 }
@@ -468,8 +471,10 @@ background-color: #ff498023!important;
 }
 .new-post-modal-wrap .modal-content{
     padding: 10px 10px 0 10px;
+    height: 100vh;
+    overflow:auto; 
 }
-.modal-backdrop{
+.new-post-modal-wrap .modal-backdrop{
     background: white !important;
     opacity: 1 !important;
 }

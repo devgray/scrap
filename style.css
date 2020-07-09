@@ -42,7 +42,12 @@ background-color: #ff498023!important;
     font-size:13px;
 }
 .nav-bottom{
-    padding-bottom:30px !important;
+    margin-bottom:40px !important;
+}
+.phone-navigation{
+    height:40px;
+    background: black;
+    width:100%;
 }
 .badge-primary{
     background: #ff4980;

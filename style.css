@@ -431,6 +431,30 @@ background-color: #ff498023!important;
 .feed-page .modal-dialog{
     width:60%;
 }
+.listing-tab{
+    padding:0;
+}
+.listing-tab .row{
+    margin:0;
+    padding:0 2px;
+}
+.listing-tab .card{
+    font-size:14px;
+    padding:0 2px !important;
+    background:transparent;
+}
+.listing-tab .card-img-top{
+    
+}
+.listing-tab .img-container{
+    overflow: hidden;
+    width:100%;
+    height:150px;
+    object-position: center; /* Center the image within the element */
+}
+.listing-tab .card-text{
+    padding:0 10px;
+}
 
 .modal.fade .modal-dialog{
     /* transition: -webkit-transform .3s ease-out;

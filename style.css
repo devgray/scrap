@@ -38,12 +38,15 @@ background-color: #ff498023!important;
 .search-bar{
     color:#c0c0c0;
 }
+
 .navbar{
     padding-top:40px;
 }
 .navbar .form-control{
     padding:2px;
-    font-size:13px;
+}
+.navbar .input-group{
+    height:38px;
 }
 .nav-bottom{
     /* padding-bottom:45px !important; */

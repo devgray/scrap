@@ -388,22 +388,27 @@ background-color: #ff498023!important;
     border-radius: 0;
     border-bottom:1px solid rgb(240, 240, 240);
 }
+.feed-page .explore-tab .card{
+    padding:0 10px 10px 10px;
+}
 .feed-page .tab-content h6,
 .feed-page .tab-content p{
     margin-bottom:0;
 }
-.new-post .card-img, .card-img-bottom{
+.feed-tab .card-img, .card-img-bottom{
     border-radius:0;
 }
 .feed-page .post-avi{
     height:35px;
     border-radius:10em;
 }
-.feed-page .new-post .card-header{
+.feed-page .feed-tab .card-header,
+.feed-page .explore-tab .card-header{
     padding:10px 5px;
     border-bottom:none;
 }
-.new-post .text-muted{
+.feed-tab .text-muted,
+.explore-tab .text-muted{
     font-size:11px;
 }
 .post-text-header{
@@ -412,7 +417,8 @@ background-color: #ff498023!important;
 .feed-page .tab-content .card-title{
     margin-bottom:8px;
 }
-.new-post .card-text{
+.feed-tab .card-text,
+.explore-tab .card-text{
     font-size:14px;
 }
 .feed-page .tab-content .post-reacts{
@@ -421,10 +427,10 @@ background-color: #ff498023!important;
 .post-reacts .far:hover{
     color:#ff4980;
 }
-.new-post .dropdown-menu{
+.feed-tab .dropdown-menu{
     font-size:14px;
 }
-.new-post .dropdown-menu a:active{
+.feed-tab .dropdown-menu a:active{
     background:#ff4980;
     color:white;
 }
@@ -486,8 +492,8 @@ background-color: #ff498023!important;
 .post-options .nav-link.active{
     border:none;
 }
-.new-post a.bg-light:focus,
-.new-post a.bg-light:hover{
+.feed-tab a.bg-light:focus,
+.feed-tab a.bg-light:hover{
     background:#f8f9fa!important
 }
 .img-crop img{

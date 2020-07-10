@@ -229,6 +229,11 @@ text-decoration: none;
 .user-page .card{
     border-radius:0;
 }
+.user-card .card-body{
+    border-bottom:1px solid #f0f0f0;
+    background: white;
+    padding: .4rem .5rem .8rem .5rem;
+}
 .user-card .card-text{
     font-size:12px;
 }
@@ -237,10 +242,6 @@ text-decoration: none;
 }
 .user-card .col-10{
     padding:0;
-}
-.user-card .card-body{
-    background: white;
-    padding: .4rem .5rem .8rem .5rem;
 }
 .user-name{
     font-weight: 700;
@@ -325,6 +326,8 @@ text-decoration: none;
 .points-page .nav-tabs{
     border:none;
     background:white;
+    border-bottom-left-radius: 1em;
+    border-bottom-right-radius: 1em;
 }
 
 .points-page .tab-content a{
@@ -358,8 +361,7 @@ text-decoration: none;
     color:white !important;
 }
 /* FEED PAGE */
-.sticky-top{
-    background-color: white;
+body{
     -webkit-transition: all 0.5s ease;
     -moz-transition: all 0.5s ease;
     -o-transition: all 0.5s ease;
@@ -374,6 +376,9 @@ text-decoration: none;
 }
 .feed-page{
     border-bottom:1px solid #f0f0f0;
+    border-bottom-left-radius: 1em;
+    border-bottom-right-radius: 1em;
+    background:white;
 }
 .feed-page .nav-item{
     width:33.33%;
@@ -401,6 +406,7 @@ text-decoration: none;
 }
 .feed-page .nav-tabs{
     border:none;
+    
 }
 .feed-page .tab-content a{
     text-decoration: none;

@@ -51,6 +51,17 @@
                 $("#section-3").addClass("active");
                 $("#section-3-tab").addClass("active");
             }
+
+            $('#section-1-tab').click(function() {
+            window.history.pushState('obj', 'newtitle', '#feed');
+            // $('#myTab a[href="#section-1-tab"]').tab('show')
+            });
+            $('#section-2-tab').click(function() {
+            window.history.pushState('obj', 'newtitle', '#explore');
+            });
+            $('#section-3-tab').click(function() {
+            window.history.pushState('obj', 'newtitle', '#listing');
+            });
         });
         $(window).on('shown.bs.modal', function (e) {
             $('#new-post').focus();

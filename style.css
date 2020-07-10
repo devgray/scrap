@@ -18,6 +18,9 @@
 body{
     background: #f0f0f0;
 }
+a{
+    color:#ff4980;
+}
 /* Ripple effect */
 .ripple {
     background-position: center;
@@ -175,6 +178,14 @@ background-color: #ff498023!important;
     width:100%;
     flex-wrap: wrap;
 }
+.item-card{
+color:#2b2b2b;
+text-decoration: none;
+}
+.item-card:hover{
+    color:#2b2b2b;
+    text-decoration: none;
+}
 .card-text .fa-star{
     font-size:9px;
     color: #ff4980;
@@ -197,6 +208,7 @@ background-color: #ff498023!important;
 }
 .card{
     border:none;
+    border-radius:0;
 }
 .card-body{
     padding:1rem;
@@ -336,6 +348,13 @@ background-color: #ff498023!important;
 }
 
 /* FEED PAGE */
+.sticky-top{
+    background-color: white;
+    -webkit-transition: all 0.5s ease;
+    -moz-transition: all 0.5s ease;
+    -o-transition: all 0.5s ease;
+    transition: all 0.5s ease;
+}
 .user-avatar{
     width:37px;
     border-radius: 10em;
@@ -343,20 +362,32 @@ background-color: #ff498023!important;
 .feed-page .col-12{
     padding:0;
 }
+.feed-page{
+    border-bottom:1px solid #f0f0f0;
+}
 .feed-page .nav-item{
     width:33.33%;
+}
+.feed-page .nav-link small{
+    font-weight: 600;
 }
 .feed-page .nav-link{
     text-align: center;
     background:transparent;
     border:none;
-    padding: 10px 5px;
+    margin: 10px 0px;
     color: #2b2b2b;
+    border-radius: 0;
+    border-right:1px solid #dee2e6;
+}
+.feed-page .last-tab{
+    border:none;
 }
 .feed-page .nav-link.active{
     background: transparent;
-    border-bottom: 5px solid #ff4980;
+    /* border-bottom: 5px solid #ff4980; */
     color:#ff4980;
+    border-color:#dee2e6;
 }
 .feed-page .nav-tabs{
     border:none;
@@ -488,6 +519,7 @@ background-color: #ff498023!important;
     text-align: left;
     border:none;
     padding:10px;
+    margin:0;
 }
 .post-options .nav-link.active{
     border:none;
@@ -622,4 +654,52 @@ background-color: #ff498023!important;
 .search-page .modal-body .small{
     text-align: center;
     background:white;
+}
+/* ITEM PAGE */
+
+
+.item-page .modal-header{
+    
+    padding-top:30px;
+}
+.item-page .modal-content{
+    padding:0;
+}
+.item-page .modal-body{
+    padding:0;
+}
+
+.item-page a{
+    color:#2b2b2b;
+    text-decoration: none;
+}
+.item-page .search-box{
+    border-radius:10em;
+    width:100%;
+    border:none;
+    background:#f5f5f5;
+}
+.item-page .card{
+    border-bottom:1px solid rgb(240, 240, 240);
+    border-radius: 0;
+}
+.item-page p{
+    padding:10px;
+    margin:0;
+}
+.item-page .modal-content{
+    background: #f0f0f0;
+}
+.item-page .modal-header{
+    background:white;
+}
+.item-page .modal-body .small{
+    text-align: center;
+    background:white;
+}
+.item-page .post-option-btn{
+    padding:10px;
+}
+.page-title{
+    padding:10px;
 }

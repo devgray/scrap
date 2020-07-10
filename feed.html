@@ -29,7 +29,42 @@
         
         <!-- CUSTOM SCRIPT -->
         <script src="../html-include.js"></script>
+        <script>
+            $(document).ready(function(){       
+        var scroll_pos = 0;
+        $(document).scroll(function() {
+            scroll_pos = $(this).scrollTop();
+            if(scroll_pos > 10) {
+                // $(".sticky-top").css('background-color', '#f0f0f0');
+            } else {
+                // $(".sticky-top").css('background-color', 'white');
+            }
+        });
+        });
 
+        $(document).ready(function() {
+            if (window.location.href.indexOf("listing") > -1) {
+                $("#section-1").removeClass("show");
+                $("#section-1").removeClass("active");
+                $("#section-1-tab").removeClass("active");
+                $("#section-3").addClass("show");
+                $("#section-3").addClass("active");
+                $("#section-3-tab").addClass("active");
+            }
+        });
+        $(window).on('shown.bs.modal', function (e) {
+            $('#new-post').focus();
+        })
+        
+        function check(){
+            $('.new-post-modal').modal('hide')
+        }
+        </script>
+        <script type="text/javascript"> 
+        window.onpopstate = function() {
+        alert("clicked back button");
+        }; history.pushState({}, '');
+        </script>
         
         </head>
 
@@ -53,7 +88,7 @@
 
         <!-- END TOP NAVBAR -->
 
-        <div class="container-fluid">
+        <div class="container-fluid mb-2">
             <div class="row page-wrap feed-page">
                 <div class="col-12 card bg-white">
                     <!-- EMPTY SECTION --> 
@@ -62,7 +97,7 @@
                         <div class="input-group-prepend">
                             <img class="post-avi" src="images/jennie.jpg">
                         </div>
-                        <a class="ml-2 form-control new-post-textbox d-flex"  data-toggle="modal" data-target=".new-post-modal">
+                        <a href="feed.html#new" class="ml-2 form-control new-post-textbox d-flex"  data-toggle="modal" data-target=".new-post-modal">
                             <p class="align-self-center ml-2 text-muted">What's in your area?</p></a>
                         <!-- <a type="text" class="ml-2 form-control new-post-textbox" aria-label="Sizing example input"
                         aria-describedby="inputGroup-sizing-default" placeholder="Suh~"></a> -->
@@ -70,8 +105,8 @@
                     </form>
                 </div>
 
-                <div class="col-12 bg-white mb-2">
-                    <ul class="nav nav-tabs d-flex justify-content-around" id="myTab" role="tablist">
+                <div class="col-12">
+                    <ul class="nav nav-tabs d-flex justify-content-around mb-2" id="myTab" role="tablist">
                         <li class="nav-item">
                             <a class="nav-link active d-flex flex-column" id="section-1-tab" data-toggle="tab" href="#section-1" role="tab" aria-controls="section-1" aria-selected="true">
                                
@@ -83,7 +118,7 @@
                                 <small class="justify-content-around">EXPLORE</small></a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link d-flex flex-column" id="section-3-tab" data-toggle="tab" href="#section-3" role="tab" aria-controls="section-3" aria-selected="true">
+                            <a class="nav-link d-flex flex-column last-tab" id="section-3-tab" data-toggle="tab" href="#section-3" role="tab" aria-controls="section-3" aria-selected="true">
                                 
                                 <small class="justify-content-around">YOUR LISTING</small></a>
                         </li>
@@ -202,25 +237,25 @@
                         <div class="listing-tab tab-pane fade" id="section-3" role="tabpanel" aria-labelledby="section-3-tab">
 
                             <div class="row">
-                                <a class="card col-6">
+                                <a href="item.html#listing" class="card col-6">
                                     <div class="img-container"><img class="card-img-top" src="images/img-square.jpg" alt="Card image cap"></div>
                                     <div class="card-body">
                                         <p class="card-text">[BLACKPINK] How You Like That album</p>
                                     </div>
                                 </a>
-                                <a class="card col-6">
+                                <a href="item.html#listing" class="card col-6">
                                     <div class="img-container"><img class="card-img-top" src="images/img-square.jpg" alt="Card image cap"></div>
                                     <div class="card-body">
                                         <p class="card-text">[BLACKPINK] How You Like That album</p>
                                     </div>
                                 </a>
-                                <a class="card col-6">
+                                <a href="item.html#listing" class="card col-6">
                                     <div class="img-container"><img class="card-img-top" src="images/img-square.jpg" alt="Card image cap"></div>
                                     <div class="card-body">
                                         <p class="card-text">[BLACKPINK] How You Like That album</p>
                                     </div>
                                 </a>
-                                <a class="card col-6">
+                                <a href="item.html#listing" class="card col-6">
                                     <div class="img-container"><img class="card-img-top" src="images/img-square.jpg" alt="Card image cap"></div>
                                     <div class="card-body">
                                         <p class="card-text">[BLACKPINK] How You Like That album</p>
@@ -295,7 +330,7 @@
         </div>
 
         <div class="new-post-modal-wrap">
-                <div class="modal new-post-modal" data-backdrop="static" data-keyboard="false" tabindex="-1" role="dialog" aria-labelledby="mySmallModalLabel" aria-hidden="true">
+                <div class="modal new-post-modal" id="new-post-modal" data-backdrop="static" data-keyboard="false" tabindex="-1" role="dialog" aria-labelledby="mySmallModalLabel" aria-hidden="true">
                 <div class="modal-dialog modal-sm m-auto modal-dialog-centered feed-page">
                     
                     <div class="modal-content">
@@ -310,7 +345,7 @@
                             <div class="avi-container d-flex">
                                 <img class="post-avi" src="images/jennie.jpg"><h6 class="ml-3 align-self-center">deanleecooper</h6>
                             </div>
-                            <textarea class="form-control new-post-textarea d-flex" aria-label="With textarea" placeholder="What's in your area?"></textarea>
+                            <textarea class="form-control new-post-textarea d-flex" id="new-post" aria-label="With textarea" placeholder="What's in your area?"></textarea>
                             <a class="card bg-white user-card-item mt-2 ripple">
                                     <div class="card-body">
                                     <div class="d-flex align-self-center">

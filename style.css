@@ -801,3 +801,29 @@ body{
 .item-info{
     font-size:14px;
 }
+.add-cart-confirmation .modal-content{
+    border-radius:1em;
+}
+.add-cart-confirmation p{
+    margin:0;
+}
+.add-cart-confirmation .modal-dialog{
+    width:50%;
+}
+.cart-pill{
+    position: fixed;
+    bottom:30px;
+}
+.tooltip-inner {
+    max-width: 200px;
+    padding: .25rem .5rem;
+    color: #fff;
+    text-align: center;
+    background-color: #ff4980;
+    border-radius: .25rem;
+}
+.bs-tooltip-auto[x-placement^=top] .arrow::before, .bs-tooltip-top .arrow::before {
+    top: 0;
+    border-width: .4rem .4rem 0;
+    border-top-color: #ff4980;
+}

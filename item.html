@@ -35,7 +35,7 @@
             e = document.referrer;
             if (window.location.href.indexOf("#listing") > -1){
                 e2 = "#listing";
-                window.location = e.concat(e2);
+                window.location.href = e.concat(e2);
             }else{
                 history.back();
             }

@@ -27,7 +27,7 @@ a{
     transition: background .5s;
   }
   .ripple:hover {
-    /* background: #f8f9fa radial-gradient(circle, transparent 20%,#f8f9fa 50%) center/15000%; */
+    background: #f8f9fa radial-gradient(circle, transparent 20%,#f8f9fa 50%) center/15000%;
   
 }
   .ripple:active {
@@ -71,6 +71,14 @@ background-color: #ff498023!important;
 .badge-primary{
     background: #ff4980;
     font-size:10px;
+}
+.btn-primary{
+    background:#ff4980;
+    border:none !important;
+    border-radius:.1em;
+}
+.btn-primary:hover, .btn-primary:active{
+    background:#ff3572 !important;
 }
 .page-wrap{
 }
@@ -713,11 +721,14 @@ body{
     padding:15px 10px 0 10px;
     border:none;
 }
+.item-page .card-footer{
+    padding-top:10px;
+    padding-bottom:10px;
+}
 .item-page .card-body{
     padding:0px 10px;
 }
 .item-page p{
-    padding:10px;
     margin:0;
 }
 .item-page .col-10{
@@ -759,7 +770,16 @@ body{
     padding:10px;
 }
 .item-price{
+    font-size:20px;
     font-weight:600;
     color:#ff4980;
-    padding:10px 10px 10px 0;
+}
+.item-page .item-tag{
+    height:15px;
+}
+.item-name{
+    font-size:18px;
+}
+.item-info{
+    font-size:14px;
 }

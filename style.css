@@ -682,12 +682,7 @@ body{
 /* ITEM PAGE */
 
 
-.item-page .modal-content{
-    padding:0;
-}
-.item-page .modal-body{
-    padding:0;
-}
+
 
 .item-page a{
     color:#2b2b2b;
@@ -703,16 +698,46 @@ body{
     border-bottom:1px solid rgb(240, 240, 240);
     border-radius: 0;
 }
+.item-page .card-header,
+.item-page .card-footer{
+    background:white;
+    padding:15px 10px 0 10px;
+    border:none;
+}
+.item-page .card-body{
+    padding:0px 10px;
+}
 .item-page p{
     padding:10px;
     margin:0;
+}
+.item-page .col-10{
+    padding:0;
 }
 .item-page .modal-content{
     background: #f0f0f0;
 }
 .item-page .modal-header{
-    background:white;
+    background:transparent;
     padding-top:35px;
+    z-index:10;
+    border:none;
+    -webkit-transition: all 0.5s ease;
+    -moz-transition: all 0.5s ease;
+    -o-transition: all 0.5s ease;
+    transition: all 0.5s ease;
+}
+.item-page .modal-content{
+    padding:0;
+    
+}
+.fa-heart{
+    padding:10px;
+    font-size:24px;
+}
+.item-page .modal-body{
+    padding:0;
+    margin-top:-90px;
 }
 .item-page .modal-body .small{
     text-align: center;
@@ -723,4 +748,9 @@ body{
 }
 .page-title{
     padding:10px;
+}
+.item-price{
+    font-weight:600;
+    color:#ff4980;
+    padding:10px 10px 10px 0;
 }

@@ -41,6 +41,17 @@
             }
             
         }
+        $(document).ready(function(){       
+        var scroll_pos = 0;
+        $(document).scroll(function() {
+            scroll_pos = $(this).scrollTop();
+            if(scroll_pos > 10) {
+                $(".modal-header").css('background-color', 'rgba(255,255,255,.8');
+            } else {
+                $(".modal-header").css('background-color', 'rgba(255,255,255,0');
+            }
+        });
+        });
             
         </script>
         </head>
@@ -51,24 +62,30 @@
                     
                     <div class="modal-content">
                             
-                        <div class="modal-header align-content-center">
+                        <div class="modal-header align-content-center sticky-top">
                             <a onclick="history.back()" id="backUrl" class="col-2 close-post-modal"><i class="fas fa-arrow-left"></i>
                             </a>
-                            <div class="page-title m-auto">ITEM PAGE</div>
-                            <a class="col-2 d-flex bg-white post-option-btn align-self-center" data-toggle="modal" data-target=".bd-example-modal-sm">
+                            <div class="page-title m-auto"></div>
+                            <a class="col-2 d-flex post-option-btn align-self-center" data-toggle="modal" data-target=".bd-example-modal-sm">
                             <i class="fas fa-ellipsis-v ml-auto fill-black">
                             </i></a>
                         </div>
                         <div class="modal-body">
                                 <img src="images/img-square.jpg" class="img-fluid" alt="Responsive image">
-                        </div>
-
-                        <div class="modal-body mt-2">
-                            <p class="small">Top 10 Weekly Searches</p>
-                                <div class="top-searches">
-                                    <a href="" class="card"><p>how you like that</p></a>
-                                    <a href="" class="card"><p>blackpink</p></a>
-                                </div>
+                                <div class="card">
+                                        <div class="card-header">
+                                                <h6>[BLACKPINK] How You Like That</h6>
+                                            </div>
+                                        <div class="card-body">
+                                            <div class="card-content d-flex">
+                                                <span class="item-price">P750</span>
+                                                <a class="fave-item ml-auto"><i class="fas fa-heart"></i></a>
+                                            </div>
+                                        </div>
+                                        <div class="card-footer">
+                                                 BUY NOW
+                                        </div>
+                                    </div>
                         </div>
 
                     </div>

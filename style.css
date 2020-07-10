@@ -24,16 +24,25 @@ a{
 /* Ripple effect */
 .ripple {
     background-position: center;
-    transition: background 1s;
+    transition: background .5s;
   }
   .ripple:hover {
-    background: #f8f9fa radial-gradient(circle, transparent 20%,#f8f9fa 50%) center/15000%;
-  }
+    /* background: #f8f9fa radial-gradient(circle, transparent 20%,#f8f9fa 50%) center/15000%; */
+  
+}
   .ripple:active {
     /* background-color: #ff49804f; */
     background-size: 100%;
-    transition: background .8s;
+    transition: background .2s;
   }
+.tab-content .ripple{
+    transition: padding .1s;
+}
+.tab-content .ripple:hover{
+    padding:20px !important;
+    transition: padding .5s;
+}
+
 a.bg-light:focus, a.bg-light:hover, button.bg-light:focus, button.bg-light:hover {
 background-color: #ff498023!important;
 }

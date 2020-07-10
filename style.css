@@ -658,10 +658,6 @@ text-decoration: none;
 /* ITEM PAGE */
 
 
-.item-page .modal-header{
-    
-    padding-top:30px;
-}
 .item-page .modal-content{
     padding:0;
 }
@@ -692,6 +688,7 @@ text-decoration: none;
 }
 .item-page .modal-header{
     background:white;
+    padding-top:35px;
 }
 .item-page .modal-body .small{
     text-align: center;

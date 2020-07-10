@@ -29,14 +29,17 @@
         
         <!-- CUSTOM SCRIPT -->
         <script src="../html-include.js"></script>
-        <script>
-            $(window).load(function () {
-                $("#search-box").focus();
+        <script type="text/javascript">
+            function FocusOnInput()
+            {
+                 $("#search-box").focus();
+            }
+            
             </script>
         
         </head>
 
-<body> 
+<body onload="FocusOnInput()"> 
         
                <div class="modal-dialog modal-sm m-auto search-page">
                     

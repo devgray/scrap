@@ -376,14 +376,17 @@ body{
     width:37px;
     border-radius: 10em;
 }
+.sticky-top .feed-page{
+    border-bottom-left-radius: 1em;
+    border-bottom-right-radius: 1em;
+    background:white;
+}
 .feed-page .col-12{
     padding:0;
 }
 .feed-page{
     border-bottom:1px solid #f0f0f0;
-    border-bottom-left-radius: 1em;
-    border-bottom-right-radius: 1em;
-    background:white;
+    
 }
 .feed-page .nav-item{
     width:33.33%;

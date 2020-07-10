@@ -37,6 +37,7 @@
             count++;
             $('#cart-pill').tooltip("show");
             div.innerHTML = count;
+            setTimeout(function(){ $('#cart-pill').tooltip("hide"); }, 1500);
         }
         
         function setBack(){

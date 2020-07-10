@@ -352,6 +352,10 @@ text-decoration: none;
 }
 .rewAd1-card .card-body{
     background:#ff4980 !important;
+    color:white !important;
+}
+.rewAd1-card .text-muted{
+    color:white !important;
 }
 /* FEED PAGE */
 .sticky-top{
